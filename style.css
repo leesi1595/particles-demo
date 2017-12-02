@@ -1,0 +1,50 @@
+html, body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: Raleway;
+	overflow: hidden;
+	background: linear-gradient(25deg, #1605aa, #c8a6b4);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content {
+	position: relative;
+	z-index: 2;
+	left: 15%;
+	top: 20%;
+	width: 70%;
+}
+h1.title {
+	display: inline;
+	font-size: 4vw;
+	font-weight: 500;
+	color: #fff;
+}
+p.desc {
+	position: relative;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-size: 3vw;
+	font-weight: 200;
+	color: rgba(255, 255, 255, 1);
+}
+.contact li {
+	list-style-type: none;
+	float: left;
+	font-size: 17px;
+	font-weight: 100;	
+}
+.contact li + li {
+	margin-left: 1vw;
+}
+.contact li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+.contact li a:hover { color: rgba(255, 255, 255, 1); }
