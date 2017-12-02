@@ -120,3 +120,13 @@ window.onresize = function() {  //浏览器窗口变化时重新绘制
 	drawParticles();
 }
 
+window.requestAnimationFrame = (function(){
+    return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            window.oRequestAnimationFrame      ||
+            window.msRequestAnimationFrame     ||
+            function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+})();
